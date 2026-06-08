@@ -41,13 +41,16 @@ Buka file .env yang baru muncul tersebut di VS Code. File ini berfungsi untuk me
 Cari baris kode yang berawalan DB_ (biasanya di sekitar baris ke-20 sampai ke-30), lalu sesuaikan isinya dengan setingan database di laptop Anda seperti contoh di bawah ini:
 
 Cuplikan kode
+```bash
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=db_blog_uts
 DB_USERNAME=root
 DB_PASSWORD=
+```
 
+###
 Penjelasan Konfigurasi:
 DB_DATABASE: Ini adalah nama database yang akan kita gunakan di MySQL nanti. Di sini kita sepakati namanya db_blog_uts.
 DB_USERNAME: Default pengguna MySQL untuk XAMPP/Laragon biasanya adalah root.
