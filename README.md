@@ -35,13 +35,11 @@ Buka terminal di VS Code, lalu duplikat file contoh .env.example bawaan Laravel 
 ```bash
 cp .env.example .env
 ```
-###
-Buka file .env yang baru muncul tersebut di VS Code. File ini berfungsi untuk menyimpan setingan rahasia project kita (seperti koneksi database).
+### 4. Konfigurasi Database 
 
-Cari baris kode yang berawalan DB_ (biasanya di sekitar baris ke-20 sampai ke-30), lalu sesuaikan isinya dengan setingan database di laptop Anda seperti contoh di bawah ini:
+Edit file `.env`
 
-Cuplikan kode
-```bash
+```env
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -50,9 +48,17 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
+Sesuaikan dengan database lokal anda.
+
 ```bash
 Penjelasan Konfigurasi:
 DB_DATABASE: Ini adalah nama database yang akan kita gunakan di MySQL nanti. Di sini kita sepakati namanya db_blog_uts.
 DB_USERNAME: Default pengguna MySQL untuk XAMPP/Laragon biasanya adalah root.
 DB_PASSWORD: Kosongkan saja (jangan diisi apa-apa setelah tanda =) jika Anda menggunakan setingan bawaan standar XAMPP/Laragon di Windows.
+```
+
+### 5. Jalankan Migration
+
+```bash
+php artisan migrate
 ```
