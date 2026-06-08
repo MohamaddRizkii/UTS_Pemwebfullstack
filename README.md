@@ -28,12 +28,14 @@ Karena folder `vendor` sengaja dihapus agar ukuran ZIP ringan, Anda harus mendow
 
 ```bash
 composer install
-
-# 3. Setup Konfigurasi File .env
+```
+### 3. Setup Konfigurasi File .env
 Buka terminal di VS Code, lalu duplikat file contoh .env.example bawaan Laravel menjadi file .env utama menggunakan perintah ini:
 
-Bash
+```bash
 cp .env.example .env
+```
+###
 Buka file .env yang baru muncul tersebut di VS Code. File ini berfungsi untuk menyimpan setingan rahasia project kita (seperti koneksi database).
 
 Cari baris kode yang berawalan DB_ (biasanya di sekitar baris ke-20 sampai ke-30), lalu sesuaikan isinya dengan setingan database di laptop Anda seperti contoh di bawah ini:
