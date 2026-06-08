@@ -50,7 +50,7 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-###
+```bash
 Penjelasan Konfigurasi:
 DB_DATABASE: Ini adalah nama database yang akan kita gunakan di MySQL nanti. Di sini kita sepakati namanya db_blog_uts.
 DB_USERNAME: Default pengguna MySQL untuk XAMPP/Laragon biasanya adalah root.
